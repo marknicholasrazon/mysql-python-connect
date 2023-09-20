@@ -7,7 +7,7 @@ try:
         host='localhost',
         user='root',
         password='',
-        database='sampledb'
+        database='YOUR_DATABASE_NAME'
     )
 
     if connection.is_connected():
@@ -19,7 +19,7 @@ try:
             cursor = connection.cursor()
 
             # Example query
-            cursor.execute("SELECT * FROM product")
+            cursor.execute("SELECT * FROM your_table_name")
 
             # Fetch and print results
             records = cursor.fetchall()
